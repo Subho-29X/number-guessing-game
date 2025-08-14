@@ -1,3 +1,11 @@
+// Loading screen logic
+window.addEventListener("load", () => {
+  const loadingScreen = document.getElementById("loading-screen");
+  setTimeout(() => {
+    loadingScreen.classList.add("fade-out");
+  }, 1500); // stays for 1.5 seconds
+});
+
 let randomNumber = parseInt(Math.random() * 100 + 1);
 
 const submit = document.querySelector("#subt");
